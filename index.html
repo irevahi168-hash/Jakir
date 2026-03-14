@@ -20,7 +20,6 @@
             overflow-x: hidden;
         }
 
-        /* Dynamic Animated Background */
         .bg-animate {
             position: fixed;
             top: 0;
@@ -39,7 +38,6 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* Hero Section */
         header {
             height: 100vh;
             display: flex;
@@ -50,7 +48,6 @@
             padding: 20px;
         }
 
-        /* Facebook Style Circular Profile Pic */
         .profile-img-container {
             width: 180px;
             height: 180px;
@@ -92,7 +89,6 @@
             text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         }
 
-        /* Info Box */
         .info-box {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -106,7 +102,6 @@
 
         .highlight { color: #00dbde; font-weight: bold; }
 
-        /* Gallery Section */
         .gallery {
             padding: 100px 0;
             display: flex;
@@ -126,6 +121,7 @@
             opacity: 0;
             transform: scale(0.8) translateY(100px);
             transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-align: center;
         }
 
         @keyframes borderGlow {
@@ -140,12 +136,20 @@
             display: block;
         }
 
+        .photo-card .caption {
+            padding: 15px 5px;
+            font-size: 1.1rem;
+            color: #fff;
+            font-weight: 500;
+            font-style: italic;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+        }
+
         .photo-card.active {
             opacity: 1;
             transform: scale(1) translateY(0);
         }
 
-        /* Footer Section */
         .footer-content {
             padding: 100px 20px;
             text-align: center;
@@ -176,10 +180,7 @@
             box-shadow: 0 5px 15px rgba(24, 119, 242, 0.4);
         }
 
-        .fb-button:hover {
-            transform: scale(1.05);
-            background: #166fe5;
-        }
+        .fb-button:hover { transform: scale(1.05); background: #166fe5; }
 
         .romantic-text {
             font-size: 1.4rem;
@@ -211,25 +212,26 @@
     <section class="gallery">
         <div class="photo-card">
             <img src="pic1.jpg" alt="Profile 1">
+            <div class="caption">"এক চিলতে হাসি, আর হাজারটা গল্প..."</div>
         </div>
+
         <div class="photo-card">
             <img src="pic2.jpg" alt="Profile 2">
+            <div class="caption">"নিস্তব্ধ রাতে আমি আজও তোমার অপেক্ষায়!"</div>
         </div>
+
         <div class="photo-card">
             <img src="pic3.jpg" alt="Profile 3">
+            <div class="caption">"ভিড়ের মাঝে নিজেকে খুঁজে পাওয়া বড় দায়।"</div>
         </div>
     </section>
 
     <section class="footer-content">
         <div class="status">Single & Looking for Love</div>
-        
         <p class="romantic-text">
             "শুনো ডিয়ার, ভিড়ের মাঝে হারিয়ে যাওয়ার ছেলে আমি নই। যদি হাতটা শক্ত করে ধরতে পারো, তবে কথা দিলাম—চাঁদনী রাতে তোমার পাশে বসে সারা জীবন গল্প করে কাটাবো। ভালোবাসার রাজপ্রাসাদে শুধু রাজকন্যারই অভাব..."
         </p>
-
-        <a href="https://www.facebook.com/profile.php?id=61576120395652" target="_blank" class="fb-button">
-            Add me on Facebook
-        </a>
+        <a href="https://www.facebook.com/profile.php?id=61576120395652" target="_blank" class="fb-button">Add me on Facebook</a>
     </section>
 
     <script>
